@@ -1,84 +1,134 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello</h1>
-			<p>
-				Your Guide to Financial Freedom and Time Independence			</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build financial freedom, honor God, and reclaim your time with proven passive income strategies.">
+  <title>Your Path to Freedom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0073e6;
+      color: white;
+      padding: 20px 10%;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px 10%;
+    }
+    section h2, section h3 {
+      color: #0073e6;
+    }
+    .cta-button {
+      background-color: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #005bb5;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .articles-grid article {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .read-more {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Path to Freedom, Guided by Faith</h1>
+    <p>Build Financial Freedom, Honor God, and Reclaim Your Time</p>
+  </header>
 
-				<section id="hero">
-					<h2>Learn How to Build Your Passive Income Stream</h2>
-					<p>Practical tips, proven strategies, and real-world examples for entrepreneurs, aspiring digital nomads, and side hustlers.</p>
-					<img src="https://lh3.googleusercontent.com/pw/AP1GczM1V9t-TyL-JRxbYQKgD3dDHnbLRPoiaKQYT40dBY1gKtR-_BcOCvD09AQ4_-lnjxg1VVfIAuZynN5E97fqZBwVefJ8MajCyYuxpbuZkQMlb-ylh8jxzxgb4n-2qfSGLVireryc0odNBPiRGstcgRc=w1024-h1024-s-no-gm?authuser=0" alt="People working remotely by the beach">
-					<a href="#articles" class="cta-button">Explore Topics</a>
-				  </section>
-				
-				  
-				  <section id="why-passive-income">
-					<h3>Why Choose Passive Income?</h3>
-					<ul>
-					  <li><strong>Financial Independence:</strong> Stop trading time for money and let your assets work for you.</li>
-					  <li><strong>Freedom to Explore:</strong> Live the digital nomad lifestyle, spend time with loved ones, or pursue your passions.</li>
-					  <li><strong>Future Security:</strong> Build wealth and achieve peace of mind with sustainable income streams.</li>
-					</ul>
-				  </section>
-				
-				  <section id="articles">
-					<h3>Explore Our Topics</h3>
-					<div class="articles-grid">
-					  <article>
-						<h4>Getting Started with Affiliate Marketing</h4>
-						<p>Learn how to earn passive income by promoting products you love and trust.</p>
-						<a href="affiliate-marketing.html" class="read-more">Read More</a>
-					  </article>
-					  <article>
-						<h4>Create and Sell Digital Products</h4>
-						<p>Turn your knowledge into e-books, online courses, or templates and start earning today.</p>
-						<a href="digital-products.html" class="read-more">Read More</a>
-					  </article>
-					  <article>
-						<h4>Investing in Income-Generating Assets</h4>
-						<p>Diversify your portfolio with stocks, real estate, and more for steady returns.</p>
-						<a href="investing-assets.html" class="read-more">Read More</a>
-					  </article>
-					</div>
-				  </section>
-				
-				  
-				  <section id="testimonials">
-					<h3>What Our Readers Say</h3>
-					<div class="testimonial">
-					  <blockquote>"This blog helped me launch my first online course and earn while I sleep!"</blockquote>
-					  <p>- Sarah, Digital Nomad</p>
-					</div>
-					<div class="testimonial">
-					  <blockquote>"I never thought affiliate marketing could be so simple. Thanks to this guide, I made my first $1,000 last month!"</blockquote>
-					  <p>- Mike, Side Hustler</p>
-					</div>
-				  </section>
-				
-				  
-				  <section id="newsletter">
-					<h3>Get Exclusive Tips Delivered to Your Inbox</h3>
-					<p>Sign up for our newsletter and stay updated on the best passive income strategies.</p>
-					<form>
-					  <input type="email" placeholder="Enter your email address" required>
-					  <button type="submit">Subscribe</button>
-					</form>
-				  </section>
+  <section id="why-passive-income">
+    <h2>Why Passive Income?</h2>
+    <p>Do you ever feel like you’re trading your precious time for a paycheck? God calls us to be good stewards of our time and resources. By building passive income streams, you can break free from the daily grind, focus on what truly matters, and live a life of purpose.</p>
+    <ul>
+      <li><strong>Financial Independence:</strong> Let your money work for you, so you can spend more time with your loved ones.</li>
+      <li><strong>Freedom to Explore:</strong> Follow God’s call to serve others, travel the world, or simply enjoy life with your family.</li>
+      <li><strong>Future Security:</strong> Build a solid foundation for your family and find peace knowing you’ve prepared for the future.</li>
+    </ul>
+  </section>
 
-		</main>
-		<Footer />
-	</body>
+  <section id="explore-topics">
+    <h2>Explore Topics That Help You Take Action</h2>
+    <div class="articles-grid">
+      <article>
+        <h3>Getting Started with Affiliate Marketing</h3>
+        <p>Earn passive income by sharing products you love and trust. Let your efforts work for you, even while you sleep!</p>
+        <a href="affiliate-marketing.html" class="read-more">Read More</a>
+      </article>
+      <article>
+        <h3>Create and Sell Digital Products</h3>
+        <p>Use your God-given talents to create e-books, online courses, or templates. Share your gifts with the world while creating a sustainable income.</p>
+        <a href="digital-products.html" class="read-more">Read More</a>
+      </article>
+      <article>
+        <h3>Investing in Income-Generating Assets</h3>
+        <p>Put your money into stocks, real estate, or other assets that bring consistent returns. Build wealth while trusting God’s provision.</p>
+        <a href="investing-assets.html" class="read-more">Read More</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Readers Say</h2>
+    <blockquote>
+      <p>"This blog helped me create my first online course and earn while spending more time with my kids!"</p>
+      <cite>– Sarah, Digital Nomad</cite>
+    </blockquote>
+    <blockquote>
+      <p>"I didn’t think I could do it, but with this guide, I earned my first $1,000 through affiliate marketing. Praise God!"</p>
+      <cite>– Mike, Side Hustler</cite>
+    </blockquote>
+  </section>
+
+  <section id="newsletter">
+    <h2>Join the Journey</h2>
+    <p>Stay inspired and keep learning. Sign up for our newsletter to get exclusive tips and updates on the best passive income strategies – straight to your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="cta-button">Subscribe Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Path to Freedom. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>

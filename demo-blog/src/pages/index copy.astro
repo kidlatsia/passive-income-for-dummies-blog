@@ -1,0 +1,88 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🧑Hello, Welcome To My Blog</h1>
+			<p>
+				Your Path to Freedom, Guided by Faith			</p>
+                <h2>Build Financial Freedom, Honor God, and Reclaim Your Time</h2>
+                <p>Welcome to a place where faith meets financial freedom. Whether you’re an entrepreneur, an aspiring digital nomad, or simply someone dreaming of a better future, this blog is here to help you create the life God has planned for you.</p>
+
+				<section id="hero">
+					<h2>Why Passive Income?</h2>
+					<p>Do you ever feel like you’re trading your precious time for a paycheck? God calls us to be good stewards of our time and resources. By building passive income streams, you can break free from the daily grind, focus on what truly matters, and live a life of purpose.
+
+						Here’s how passive income can transform your life:</p>
+					<img src="https://lh3.googleusercontent.com/pw/AP1GczM1V9t-TyL-JRxbYQKgD3dDHnbLRPoiaKQYT40dBY1gKtR-_BcOCvD09AQ4_-lnjxg1VVfIAuZynN5E97fqZBwVefJ8MajCyYuxpbuZkQMlb-ylh8jxzxgb4n-2qfSGLVireryc0odNBPiRGstcgRc=w1024-h1024-s-no-gm?authuser=0" alt="People working remotely by the beach">
+					<a href="#articles" class="cta-button">Explore Topics</a>
+				  </section>
+				
+				  
+				  <section id="why-passive-income">
+					<h3>Why Choose Passive Income?</h3>
+					<ul>
+					  <li><strong>Financial Independence:</strong> Stop trading time for money and let your assets work for you.</li>
+					  <li><strong>Freedom to Explore:</strong> Live the digital nomad lifestyle, spend time with loved ones, or pursue your passions.</li>
+					  <li><strong>Future Security:</strong> Build wealth and achieve peace of mind with sustainable income streams.</li>
+					</ul>
+				  </section>
+				
+				  <section id="articles">
+					<h3>Explore Our Topics</h3>
+					<div class="articles-grid">
+					  <article>
+						<h4>Getting Started with Affiliate Marketing</h4>
+						<p>Learn how to earn passive income by promoting products you love and trust.</p>
+						<a href="affiliate-marketing.html" class="read-more">Read More</a>
+					  </article>
+					  <article>
+						<h4>Create and Sell Digital Products</h4>
+						<p>Turn your knowledge into e-books, online courses, or templates and start earning today.</p>
+						<a href="digital-products.html" class="read-more">Read More</a>
+					  </article>
+					  <article>
+						<h4>Investing in Income-Generating Assets</h4>
+						<p>Diversify your portfolio with stocks, real estate, and more for steady returns.</p>
+						<a href="investing-assets.html" class="read-more">Read More</a>
+					  </article>
+					</div>
+				  </section>
+				
+				  
+				  <section id="testimonials">
+					<h3>What Our Readers Say</h3>
+					<div class="testimonial">
+					  <blockquote>"This blog helped me launch my first online course and earn while I sleep!"</blockquote>
+					  <p>- Sarah, Digital Nomad</p>
+					</div>
+					<div class="testimonial">
+					  <blockquote>"I never thought affiliate marketing could be so simple. Thanks to this guide, I made my first $1,000 last month!"</blockquote>
+					  <p>- Mike, Side Hustler</p>
+					</div>
+				  </section>
+				
+				  
+				  <section id="newsletter">
+					<h3>Get Exclusive Tips Delivered to Your Inbox</h3>
+					<p>Sign up for our newsletter and stay updated on the best passive income strategies.</p>
+					<form>
+					  <input type="email" placeholder="Enter your email address" required>
+					  <button type="submit">Subscribe</button>
+					</form>
+				  </section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
