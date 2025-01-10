@@ -131,11 +131,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <section id="newsletter">
     <h2>Join the Journey</h2>
     <p>Stay inspired and keep learning. Sign up for our newsletter to get exclusive tips and updates on the best passive income strategies – straight to your inbox.</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required>
+    <form id="subscribe-form" action="/api/subscribe" method="POST">
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required 
+        aria-label="Your email address"
+      />
       <button type="submit" class="cta-button">Subscribe Now</button>
     </form>
   </section>
+
 
   <Footer />
   <!--footer>
